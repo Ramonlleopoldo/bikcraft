@@ -1,0 +1,10 @@
+.termos-titulo {
+  font-weight: 600;
+  padding-top: 20px;
+}
+.termos-condições-lista li {
+  padding: 15px;
+}
+.termos-condições-lista li:nth-child(4) {
+  padding-bottom: 30px;
+}

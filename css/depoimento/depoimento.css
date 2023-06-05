@@ -1,0 +1,105 @@
+.depoimento-bg {
+  background: var(--p1);
+}
+.depoimento-conteudo {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.depoimento-conteudo img {
+  height: 100%;
+  object-fit: cover;
+}
+.depoimento-texto {
+  align-self: end;
+}
+.depoimento-texto p {
+  font-size: 2.25rem;
+  max-width: 25ch;
+  line-height: 1.33;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Merriweather";
+  margin-bottom: 15px;
+  padding-right: 30px;
+  position: relative;
+}
+.depoimento-texto p::before {
+  content: " “ ";
+  font-size: 5rem;
+  position: absolute;
+  left: -50px;
+  top: -30px;
+  color: var(--p2);
+}
+.depoimento-texto p::after {
+  content: " ”  ";
+  position: absolute;
+  font-size: 5rem;
+  color: var(--p2);
+}
+.depoimento-texto span {
+  display: inline-block;
+  padding-bottom: 80px;
+  color: var(--p4);
+}
+@media (max-width: 800px) {
+  .depoimento-texto p {
+    font-size: 1.5rem;
+    padding-top: 50px;
+  }
+  .depoimento-texto span {
+    padding-bottom: 40px;
+    font-size: 1rem;
+  }
+  .depoimento-texto p::before {
+    content: " “ ";
+    font-size: 3rem;
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    color: var(--p2);
+  }
+  .depoimento-texto p::after {
+    content: " ”  ";
+    position: absolute;
+    font-size: 3rem;
+    color: var(--p2);
+  }
+}
+@media (max-width: 600px) {
+  .depoimento-conteudo img {
+    display: none;
+  }
+  .depoimento-conteudo {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding: 0px 20px;
+  }
+  .depoimento-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .depoimento-texto p {
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    max-width: 25ch;
+    text-align: center;
+  }
+  .depoimento-texto p::before {
+    content: " “ ";
+    font-size: 3rem;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    color: var(--p2);
+  }
+  .depoimento-texto p::after {
+    content: " ”  ";
+    position: absolute;
+    font-size: 3rem;
+    color: var(--p2);
+  }
+}

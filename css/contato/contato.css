@@ -1,0 +1,53 @@
+.contato-conteudo {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 2fr;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+.direitos {
+  grid-column: 1/-1;
+  padding-top: 40px;
+}
+.grid-contato h3,
+.grid-informação h3 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+}
+.lista-contato-item {
+  line-height: 1.77;
+}
+.lista-contato li:nth-child(even) {
+  padding-bottom: 20px;
+}
+.lista-contato-item:nth-child(even)::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 2px;
+  background-color: var(--c11);
+  margin-top: 10px;
+}
+.lista-informaçao li {
+  line-height: 2;
+}
+@media (max-width: 800px) {
+  .grid-img {
+    display: none;
+  }
+  .contato-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lista-contato-item:nth-child(even)::after {
+    width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+  }
+}

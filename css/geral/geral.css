@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+ol,
+picture {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: currentColor;
+  display: inline-block;
+}
