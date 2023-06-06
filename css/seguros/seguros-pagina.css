@@ -1,0 +1,44 @@
+.seguros-conteudo h1 {
+  padding: 0;
+}
+.seguros-conteudo span {
+  padding-top: 20px;
+}
+.seguros-conteudo {
+  gap: 15px 40px;
+}
+.vantagens-conteudo h1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.vantagens-lista span {
+  display: block;
+}
+.vantagens-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+.perguntas-conteudo {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media (max-width: 800px) {
+  .vantagens-lista {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .vantagens-lista {
+    grid-template-columns: 1fr;
+  }
+  .vantagens-conteudo h1 {
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .perguntas-conteudo h1 {
+    font-size: 2rem;
+  }
+}

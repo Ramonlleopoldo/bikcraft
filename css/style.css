@@ -20,9 +20,10 @@
 /*depoimento*/
 @import url(./depoimento/depoimento.css);
 
-/*depoimento*/
+/*seguro-home*/
 @import url(./seguros/seguros.css);
-
+/*seguro-pagina*/
+@import url(./seguros/seguros-pagina.css);
 /*contato*/
 @import url(./contato/contato.css);
 
